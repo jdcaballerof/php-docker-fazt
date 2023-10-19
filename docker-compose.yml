@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  php_fazt: 
+    build: ./
+    image: php_fazt:0.1 
+    container_name: php_fazt_container
+    ports:
+      - 8000:80
+    volumes:
+      - /absolute/path/to/app/src:/var/www/html/
+    # restart: always
+
+
+# volumes:
+#   php_fazt:
+#     driver: local
