@@ -19,7 +19,8 @@ services:
     ports:
       - 8000:80
     volumes:
-      - .../carpeta_local:/donde/copia/la_carpeta
+      #- .../carpeta_local:/donde/copia/la_carpeta
+      # sustituir $(pwd) con lo que retorna el comando 
       - $(pwd)/src:/var/www/html/
     # restart: always
 
